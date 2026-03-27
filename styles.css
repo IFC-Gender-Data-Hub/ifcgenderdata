@@ -86,8 +86,8 @@ body {
   margin-top: 5px;
 }
 
-.story-section:not(:last-child) {
-  border-bottom: 1px solid #e5e7eb;
+.story-section {
+  margin-bottom: 20px;
 }
 
 /* EXTRA SAFETY: kill any accidental multi-column globally */
