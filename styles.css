@@ -8,43 +8,63 @@ body {
 
 /* Center entire page */
 .container {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  display: block;              /* FIX: remove flex */
 }
 
-/* BOXED CONTENT (this is the key fix) */
+/* BOXED CONTENT (main page wrapper) */
 .content-box {
   width: 100%;
-  max-width: 850px;
+  max-width: 1000px;           /* slightly wider for charts */
+  margin: 40px auto;           /* center horizontally */
   background: white;
   padding: 40px 50px;
-  margin: 40px 0;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* Header */
+/* HEADER */
 .site-header {
   text-align: center;
   padding: 20px 0;
 }
 
-/* Sections */
+/* SECTION WRAPPER */
 .story-section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
+/* TEXT WIDTH CONTROL (KEY FIX) */
+.text-container {
+  max-width: 750px;            /* controls readability */
+  margin: 0 auto;
+}
+
+/* HEADINGS */
 .story-section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-/* Chart spacing */
+/* PARAGRAPHS */
+.story-section p {
+  margin-bottom: 1.2rem;
+}
+
+/* CHART BLOCK (wider than text) */
 .chart-block {
-  margin: 25px 0;
+  margin: 30px auto;
+  max-width: 900px;            /* wider than text */
 }
 
-/* Source text */
+/* SOURCE TEXT */
 .source {
   font-size: 0.85rem;
   color: #6b7280;
+  margin-top: 5px;
+}
+
+/* OPTIONAL: subtle section separation */
+.story-section:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 30px;
 }
