@@ -90,27 +90,6 @@ body {
   margin-bottom: 5px;
 }
 
-.hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  color: #6b7280;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.intro {
-  font-size: 1.05rem;
-}
-
-.insight {
-  font-weight: 500;
-  color: #111827;
-  margin-top: 10px;
-}
-
 /* EXTRA SAFETY: kill any accidental multi-column globally */
 main, section, div {
   column-count: 1 !important;
