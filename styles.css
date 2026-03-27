@@ -1,3 +1,9 @@
+/* RESET (prevents unexpected multi-column or layout inheritance) */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,17 +12,16 @@ body {
   line-height: 1.7;
 }
 
-/* Center entire page */
+/* MAIN PAGE CONTAINER */
 .container {
   width: 100%;
-  display: block;              /* FIX: remove flex */
 }
 
-/* BOXED CONTENT (main page wrapper) */
+/* BOXED CONTENT (centered page) */
 .content-box {
   width: 100%;
-  max-width: 1000px;           /* slightly wider for charts */
-  margin: 40px auto;           /* center horizontally */
+  max-width: 1000px;
+  margin: 40px auto;
   background: white;
   padding: 40px 50px;
   border-radius: 10px;
@@ -26,34 +31,52 @@ body {
 /* HEADER */
 .site-header {
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0 10px;
+}
+
+.site-header h1 {
+  margin: 0;
 }
 
 /* SECTION WRAPPER */
 .story-section {
   margin-bottom: 50px;
+
+  /* 🔥 CRITICAL FIX: force single column */
+  display: block;
+  column-count: 1;
 }
 
-/* TEXT WIDTH CONTROL (KEY FIX) */
+/* TEXT CONTAINER (controls readable width) */
 .text-container {
-  max-width: 750px;            /* controls readability */
+  max-width: 750px;
   margin: 0 auto;
+
+  /* CRITICAL FIX */
+  display: block;
+  column-count: 1;
 }
 
 /* HEADINGS */
 .story-section h2 {
   margin-bottom: 12px;
+  font-weight: 600;
+  color: #111827;
 }
 
 /* PARAGRAPHS */
 .story-section p {
   margin-bottom: 1.2rem;
+
+  /* Ensure no splitting */
+  display: block;
+  width: 100%;
 }
 
 /* CHART BLOCK (wider than text) */
 .chart-block {
   margin: 30px auto;
-  max-width: 900px;            /* wider than text */
+  max-width: 900px;
 }
 
 /* SOURCE TEXT */
@@ -63,8 +86,14 @@ body {
   margin-top: 5px;
 }
 
-/* OPTIONAL: subtle section separation */
+/* SECTION DIVIDER */
 .story-section:not(:last-child) {
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 30px;
+}
+
+/* EXTRA SAFETY: kill any accidental multi-column globally */
+main, section, div {
+  column-count: 1 !important;
+  column-gap: normal !important;
 }
