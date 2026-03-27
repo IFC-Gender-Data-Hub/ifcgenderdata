@@ -86,12 +86,6 @@ body {
   margin-top: 5px;
 }
 
-/* SECTION DIVIDER */
-.story-section:not(:last-child) {
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 30px;
-}
-
 /* EXTRA SAFETY: kill any accidental multi-column globally */
 main, section, div {
   column-count: 1 !important;
