@@ -40,7 +40,7 @@ body {
 
 /* SECTION WRAPPER */
 .story-section {
-  margin-bottom: 30px;            /* ↓ from 50px */
+  margin-bottom: 20px;            /* ↓ from 50px */
 
   display: block;
   column-count: 1;
@@ -71,7 +71,7 @@ body {
 
 /* CHART BLOCK */
 .chart-block {
-  margin: 20px auto;              /* ↓ from 30px */
+  margin: 15px auto;              /* ↓ from 30px */
   max-width: 900px;
 }
 
