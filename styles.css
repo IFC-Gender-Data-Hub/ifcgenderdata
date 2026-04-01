@@ -1,4 +1,4 @@
-/* RESET (prevents unexpected multi-column or layout inheritance) */
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f3f4f6;
   color: #1f2937;
-  line-height: 1.7;
+  line-height: 1.6; /* slightly tighter */
 }
 
 /* MAIN PAGE CONTAINER */
@@ -17,21 +17,21 @@ body {
   width: 100%;
 }
 
-/* BOXED CONTENT (centered page) */
+/* BOXED CONTENT (reduced outer + inner spacing) */
 .content-box {
   width: 100%;
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 20px auto;              /* ↓ from 40px */
   background: white;
-  padding: 40px 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 25px 30px;             /* ↓ from 40/50 */
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
 /* HEADER */
 .site-header {
   text-align: center;
-  padding: 30px 0 10px;
+  padding: 15px 0 5px;            /* tighter */
 }
 
 .site-header h1 {
@@ -40,57 +40,49 @@ body {
 
 /* SECTION WRAPPER */
 .story-section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;            /* ↓ from 50px */
 
-  /* force single column */
   display: block;
   column-count: 1;
 }
 
-/* TEXT CONTAINER (controls readable width) */
+/* TEXT CONTAINER */
 .text-container {
-  max-width: 750px;
+  max-width: 720px;               /* slightly tighter */
   margin: 0 auto;
 
-  /* CRITICAL FIX */
   display: block;
   column-count: 1;
 }
 
 /* HEADINGS */
 .story-section h2 {
-  margin-bottom: 12px;
+  margin-bottom: 8px;             /* ↓ from 12px */
   font-weight: 600;
   color: #111827;
 }
 
 /* PARAGRAPHS */
 .story-section p {
-  margin-bottom: 1.2rem;
-
-  /* Ensure no splitting */
+  margin-bottom: 0.9rem;          /* ↓ from 1.2rem */
   display: block;
   width: 100%;
 }
 
-/* CHART BLOCK (wider than text) */
+/* CHART BLOCK */
 .chart-block {
-  margin: 30px auto;
+  margin: 20px auto;              /* ↓ from 30px */
   max-width: 900px;
 }
 
 /* SOURCE TEXT */
 .source {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #6b7280;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-.story-section {
-  margin-bottom: 5px;
-}
-
-/* EXTRA SAFETY: kill any accidental multi-column globally */
+/* EXTRA SAFETY */
 main, section, div {
   column-count: 1 !important;
   column-gap: normal !important;
