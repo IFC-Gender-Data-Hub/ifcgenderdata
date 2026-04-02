@@ -101,6 +101,14 @@ body {
   margin-top: 4px;
 }
 
+.meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 18px;
+  font-family: Georgia, serif;
+  letter-spacing: 0.3px;
+}
+
 /* EXTRA SAFETY */
 main, section, div {
   column-count: 1 !important;
