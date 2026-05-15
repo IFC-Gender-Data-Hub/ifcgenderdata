@@ -20,10 +20,10 @@ body {
 /* BOXED CONTENT (reduced outer + inner spacing) */
 .content-box {
   width: 100%;
-  max-width: 1000px;
-  margin: 20px auto;              /* ↓ from 40px */
+  max-width: 1400px;   /* wider hero */
+  margin: 20px auto;
   background: white;
-  padding: 25px 30px;             /* ↓ from 40/50 */
+  padding: 0 30px 30px;   /* remove top padding */
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
@@ -107,6 +107,98 @@ body {
   margin-bottom: 18px;
   font-family: Georgia, serif;
   letter-spacing: 0.3px;
+}
+
+/* =========================
+   SPLIT HERO SECTION
+========================= */
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 85vh;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+/* LEFT SIDE */
+.hero-text {
+  background: #151c2f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px;
+}
+
+.hero-inner {
+  max-width: 520px;
+  text-align: center;
+}
+
+.hero-label {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+.hero-line {
+  width: 120px;
+  height: 1px;
+  background: rgba(255,255,255,0.4);
+  margin: 25px auto;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  line-height: 1.08;
+  font-weight: 800;
+  margin: 0;
+  color: white;
+}
+
+.hero-meta {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  .hero-split {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-text {
+    padding: 50px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-image {
+    height: 420px;
+  }
 }
 
 /* EXTRA SAFETY */
