@@ -109,9 +109,7 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* =========================
-   SPLIT HERO SECTION
-========================= */
+/* SPLIT HERO SECTION */
 
 .hero-split {
   display: grid;
@@ -199,6 +197,38 @@ body {
   .hero-image {
     height: 420px;
   }
+}
+
+/* SCROLL FADE EFFECT */
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*  READING PROGRESS BAR */
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 4px;
+
+  background: #2563eb;
+
+  z-index: 9999;
+
+  transition: width 0.1s ease;
 }
 
 /* EXTRA SAFETY */
