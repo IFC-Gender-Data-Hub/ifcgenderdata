@@ -374,22 +374,12 @@
 
 <script src="https://public.flourish.studio/resources/embed.js"></script>
 <script>
-  const fadeSections = document.querySelectorAll('.fade-section');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, {
-    threshold: 0.15
-  });
-
-  fadeSections.forEach(section => {
-    observer.observe(section);
-  });
+  // fade effect
 </script>
-  
+
+<script>
+  // progress bar
+</script>
+
 </body>
 </html>
