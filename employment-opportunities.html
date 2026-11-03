@@ -1,255 +1,328 @@
-/* ==================================================
-   IFC GENDER DATA INSIGHTS — EMPLOYMENT STORY
-   Boxed editorial layout
-   ================================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exploring women's employment, occupational opportunities, hiring, retention and workplace inclusion.">
+  <title>Jobs for Women | IFC Gender Data Insights</title>
+  <link rel="stylesheet" href="./styles.css?v=3">
+</head>
 
-* {
-    box-sizing: border-box;
-}
+<body>
 
-html {
-    scroll-behavior: smooth;
-}
+<header class="story-header">
+  <div class="site-brand">
+    <a href="index.html">IFC Gender Data Insights</a>
+  </div>
+  <div class="header-label">DATA STORY</div>
+</header>
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #f2f2f2;
-    color: #252525;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-}
+<main class="story-container">
 
-/* HEADER */
-.story-header {
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 16px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  <!-- STORY INTRODUCTION -->
+  <section class="story-hero">
+    <p class="eyebrow">EMPLOYMENT</p>
 
-.story-header .site-brand a {
-    color: #17365d;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-}
+    <h1>Beyond Employment Numbers: Understanding Women's Experiences at Work</h1>
 
-.story-header .header-label {
-    color: #b66b3d;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
+    <p class="story-deck">
+      Women's participation in employment tells only part of the story.
+      Where women work, the occupations they hold, and their experiences
+      entering and remaining in employment offer a broader perspective
+      on economic opportunities and workplace inclusion.
+    </p>
 
-/* MAIN WHITE CONTENT BOX */
-.story-container {
-    width: calc(100% - 40px);
-    max-width: 820px;
-    margin: 30px auto 60px;
-    padding: 55px 70px;
-    background: #ffffff;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-}
+    <p class="story-meta">IFC Gender Data Insights | 2025</p>
+  </section>
 
-/* INTRODUCTION */
-.story-hero {
-    margin: 0 0 65px;
-    text-align: left;
-}
 
-.story-hero .eyebrow {
-    color: #b66b3d;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
-}
+  <!-- CHART 1 -->
+  <section class="story-section">
 
-.story-hero h1 {
-    color: #17365d;
-    font-size: 38px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin: 10px 0 22px;
-}
+    <div class="story-copy">
+      <h2>Women's representation at entry level does not always match their share of the overall workforce</h2>
 
-.story-hero .story-deck {
-    color: #505050;
-    font-size: 19px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
+      <p>
+        Women's share of the profiled workforce has increased over time,
+        although representation varies across regions. Comparing women's
+        share of all employees with their share of entry-level employees
+        provides another perspective on how women are represented at the
+        starting level of firms. The relationship between these two
+        measures differs across regions.
+      </p>
+    </div>
 
-.story-hero .story-meta {
-    color: #888888;
-    font-size: 13px;
-}
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_1_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_1_ID/embed"
+          title="Women's share of all employees and entry-level employees"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
 
-/* STORY SECTIONS */
-.story-section {
-    margin: 0 0 75px;
-}
+      <p class="chart-caption">
+        Chart 1. Women's share of all employees versus women's share of
+        entry-level employees by region, 2015&ndash;2025.
+      </p>
+      <p class="source-note">Source: Revelio Labs via World Bank Group.</p>
+    </div>
 
-.story-copy {
-    margin: 0 0 28px;
-}
+  </section>
 
-.story-copy h2 {
-    color: #17365d;
-    font-size: 29px;
-    line-height: 1.3;
-    font-weight: 700;
-    margin: 0 0 20px;
-}
 
-.story-copy p {
-    color: #383838;
-    font-size: 17px;
-    line-height: 1.8;
-    margin: 0 0 18px;
-}
+  <!-- CHART 2 -->
+  <section class="story-section">
 
-/* FLOURISH CHART CONTAINERS */
-.chart-container {
-    width: 100%;
-    margin: 30px auto 0;
-    overflow: hidden;
-}
+    <div class="story-copy">
+      <h2>Women's representation in employment varies considerably across countries</h2>
 
-.flourish-embed {
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    background: #ffffff;
-    overflow: hidden;
-}
+      <p>
+        Regional patterns also have a country-level dimension.
+        The geographic distribution of women's share of the profiled
+        workforce provides a closer look at how women's representation
+        differs across countries.
+      </p>
+    </div>
 
-.flourish-embed iframe {
-    display: block;
-    width: 100%;
-    height: 560px;
-    max-width: 100%;
-    border: 0;
-}
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_2_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_2_ID/embed"
+          title="Women's share of employment by country"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
 
-/* CAPTIONS AND SOURCE NOTES */
-.chart-caption {
-    color: #333333;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.6;
-    margin: 15px 0 5px;
-}
+      <p class="chart-caption">
+        Chart 2. Women's share of employment by country, 2025.
+      </p>
+      <p class="source-note">
+        Source: Revelio Labs via World Bank Group; World Bank Official Boundaries.
+      </p>
+    </div>
 
-.source-note {
-    color: #777777;
-    font-size: 12px;
-    line-height: 1.6;
-    margin: 5px 0 0;
-}
+  </section>
 
-/* CONCLUSION */
-.conclusion-section {
-    margin: 85px auto 55px;
-    padding: 35px 0;
-    border-top: 2px solid #e5e5e5;
-    text-align: left;
-}
 
-.conclusion-section .eyebrow {
-    color: #b66b3d;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
-}
+  <!-- CHART 3 -->
+  <section class="story-section">
 
-.conclusion-section h2 {
-    color: #17365d;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
+    <div class="story-copy">
+      <h2>Women remain concentrated in certain industries, with lower representation in others</h2>
 
-.conclusion-section p {
-    color: #383838;
-    font-size: 17px;
-    line-height: 1.8;
-}
+      <p>
+        The industries in which women work also vary considerably.
+        Women account for larger shares of employment in some service
+        sectors, while their representation is lower in several
+        industrial sectors. Comparing Revelio's profiled firms with
+        Equileap's publicly listed companies provides two perspectives
+        on women's representation across industries.
+      </p>
+    </div>
 
-/* REFERENCES */
-.story-references {
-    margin: 50px auto;
-    padding-top: 25px;
-    border-top: 1px solid #e5e5e5;
-}
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_3_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_3_ID/embed"
+          title="Women's share of employment by sector"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
 
-.story-references h3 {
-    color: #17365d;
-    font-size: 20px;
-}
+      <p class="chart-caption">
+        Chart 3. Women's share of employment by sector, comparing Revelio
+        and Equileap, 2025.
+      </p>
+      <p class="source-note">Source: Revelio Labs and Equileap via World Bank Group.</p>
+    </div>
 
-.story-references p {
-    color: #666666;
-    font-size: 13px;
-    line-height: 1.7;
-    padding-left: 2em;
-    text-indent: -2em;
-}
+  </section>
 
-/* FOOTER */
-.story-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 22px;
-    margin-top: 55px;
-    font-size: 13px;
-}
 
-.story-footer a {
-    color: #17365d;
-    text-decoration: none;
-}
+  <!-- CHART 4 -->
+  <section class="story-section">
 
-/* MOBILE */
-@media screen and (max-width: 768px) {
+    <div class="story-copy">
+      <h2>Women's occupational profiles differ across firm sizes</h2>
 
-    .story-container {
-        width: calc(100% - 20px);
-        margin: 10px auto 30px;
-        padding: 30px 22px;
-    }
+      <p>
+        Beyond the industries in which women work, the occupations
+        they hold provide another perspective on their employment
+        experiences. The distribution of women across occupational
+        groups varies by firm size, offering a closer look at the
+        types of roles represented in different firms.
+      </p>
+    </div>
 
-    .story-hero h1 {
-        font-size: 30px;
-    }
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_4_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_4_ID/embed"
+          title="Women's occupational distribution by firm size"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
 
-    .story-hero .story-deck {
-        font-size: 16px;
-    }
+      <p class="chart-caption">
+        Chart 4. Distribution of women's employment across occupation
+        groups by firm size, 2025.
+      </p>
+      <p class="source-note">Source: Revelio Labs via World Bank Group.</p>
+    </div>
 
-    .story-copy h2 {
-        font-size: 24px;
-    }
+  </section>
 
-    .story-copy p,
-    .conclusion-section p {
-        font-size: 16px;
-    }
 
-    .flourish-embed iframe {
-        height: 460px;
-    }
+  <!-- CHART 5 -->
+  <section class="story-section">
 
-    .story-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+    <div class="story-copy">
+      <h2>Women's hiring rates relative to men's vary across regions and over time</h2>
+
+      <p>
+        Hiring rates offer another perspective on how women and men
+        enter firms. Across most regions and for much of the period,
+        women's hiring rates are higher than men's when measured
+        relative to their respective employment bases. The size of
+        this difference varies across regions and over time.
+      </p>
+    </div>
+
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_5_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_5_ID/embed"
+          title="Hiring rates for women and men by region"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+
+      <p class="chart-caption">
+        Chart 5. Hiring rates for women and men by region, 2015&ndash;2025.
+      </p>
+      <p class="source-note">
+        Source: Revelio Labs via World Bank Group. Hiring rate is hires as a share of employment.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- CHART 6 -->
+  <section class="story-section">
+
+    <div class="story-copy">
+      <h2>Sectors with higher hiring rates do not necessarily retain women for longer</h2>
+
+      <p>
+        Beyond who enters firms, the length of time employees remain
+        with their employers offers another perspective on employment
+        patterns. Retention measures the share of women who remain
+        with the same employer after twelve months. Comparing hiring
+        and retention rates across sectors reveals differences in
+        both workforce entry and employment continuity.
+        Research on employee turnover and job tenure also highlights
+        the importance of looking beyond recruitment to understand
+        employment continuity (Hom, Roberson, and Ellis 2008;
+        Hollister and Smith 2014).
+      </p>
+    </div>
+
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_6_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_6_ID/embed"
+          title="Hiring and retention rates of women by sector"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+
+      <p class="chart-caption">
+        Chart 6. Hiring and retention rates of women by sector, 2025.
+      </p>
+      <p class="source-note">
+        Source: World Bank Group. Retention rate is the share of women
+        who remain with the same employer after twelve months.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- CHART 7 -->
+  <section class="story-section">
+
+    <div class="story-copy">
+      <h2>Equal-opportunity hiring and training policies are widespread, but employee resource groups remain uncommon</h2>
+
+      <p>
+        Company policies offer another perspective on workplace
+        inclusion. Formal commitments to equal-opportunity hiring
+        and access to training and career development are important
+        elements of organizational practice. Dedicated employee
+        resource groups for women provide a different form of
+        workplace support.
+      </p>
+    </div>
+
+    <div class="chart-container">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/CHART_7_ID">
+        <iframe src="https://flo.uri.sh/visualisation/CHART_7_ID/embed"
+          title="Adoption of gender-inclusive policies among listed companies"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+
+      <p class="chart-caption">
+        Chart 7. Adoption of gender-inclusive policies among listed
+        companies, 2020&ndash;2025.
+      </p>
+      <p class="source-note">Source: Equileap via World Bank Group.</p>
+    </div>
+
+  </section>
+
+
+  <!-- CONCLUSION -->
+  <section class="conclusion-section">
+
+    <p class="eyebrow">CONCLUSION</p>
+
+    <h2>Creating workplaces where women can thrive</h2>
+
+    <p>
+      Expanding women's economic opportunities requires more than
+      increasing their participation in employment. It also means
+      creating workplaces where women have opportunities to develop
+      their skills, advance professionally, and sustain meaningful
+      employment over time. The way organizations recruit, develop,
+      and retain employees, as well as the policies they put in place
+      to support gender inclusion, shapes the broader landscape of
+      opportunities available to women. Moving from commitments to
+      meaningful workplace inclusion requires attention not only to
+      who gets hired, but also to the conditions, opportunities, and
+      support that enable women to thrive throughout their working lives.
+    </p>
+
+  </section>
+
+
+  <!-- REFERENCES -->
+  <section class="story-references">
+    <h3>References</h3>
+    <p>
+      Hom, Peter W., Loriann Roberson, and Aimee D. Ellis. 2008.
+      "Challenging Conventional Wisdom about Who Quits: Revelations
+      from Corporate America." <em>Journal of Applied Psychology</em>
+      93 (1): 1&ndash;34.
+    </p>
+    <p>
+      Hollister, Matissa N., and Kristin E. Smith. 2014.
+      "Unmasking the Conflicting Trends in Job Tenure by Gender
+      in the United States, 1983&ndash;2008."
+      <em>American Sociological Review</em> 79 (1): 1&ndash;23.
+    </p>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="story-footer">
+    <p>IFC Gender Data Insights</p>
+    <a href="index.html">Back to Gender Data Insights</a>
+  </footer>
+
+</main>
+
+<!-- Flourish loader: renders embeds responsively once real IDs are in place -->
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+
+</body>
+</html>
