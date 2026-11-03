@@ -282,3 +282,249 @@ main, section, div {
   column-count: 1 !important;
   column-gap: normal !important;
 }
+
+
+/* ==================================================
+   EMPLOYMENT OPPORTUNITIES STORY PAGE
+   Boxed editorial layout
+   ================================================== */
+
+/* Page background and base typography */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #f2f2f2 !important;
+    color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Header */
+.story-header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 16px 25px;
+}
+
+.story-header .site-brand a {
+    color: #17365d;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Main white content box */
+body .story-container {
+    display: block;
+    width: calc(100% - 40px);
+    max-width: 1060px;
+    margin: 30px auto 60px;
+    padding: 55px 70px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Introduction */
+body .story-container .story-hero {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 65px;
+    padding: 0;
+    text-align: left;
+}
+
+.story-hero .eyebrow {
+    color: #b66b3d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.story-hero h1 {
+    color: #17365d;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 10px 0 22px;
+}
+
+.story-hero .story-deck {
+    color: #505050;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.story-hero .story-meta {
+    color: #888888;
+    font-size: 13px;
+}
+
+/* Individual story sections */
+body .story-container .story-section {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 75px;
+    padding: 0;
+}
+
+/* Narrative text */
+body .story-container .story-copy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 28px;
+}
+
+.story-copy h2 {
+    color: #17365d;
+    font-size: 29px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.story-copy p {
+    color: #383838;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+/* Flourish chart containers */
+body .story-container .chart-container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+
+.flourish-embed {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.flourish-embed iframe {
+    display: block;
+    width: 100%;
+    height: 560px;
+    max-width: 100%;
+    border: 0;
+}
+
+/* Chart captions and source notes */
+.chart-caption {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 15px 0 5px;
+}
+
+.source-note {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 5px 0 0;
+}
+
+/* Conclusion */
+body .story-container .conclusion-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 85px auto 55px;
+    padding: 35px 0;
+    border-top: 2px solid #e5e5e5;
+    text-align: left;
+}
+
+.conclusion-section h2 {
+    color: #17365d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.conclusion-section p {
+    color: #383838;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* References */
+.story-references {
+    width: 100%;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-top: 25px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.story-references h3 {
+    color: #17365d;
+    font-size: 20px;
+}
+
+.story-references p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Footer */
+.story-container .story-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 22px;
+    margin-top: 55px;
+    font-size: 13px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+
+    body .story-container {
+        width: calc(100% - 20px);
+        margin: 10px auto 30px;
+        padding: 30px 22px;
+    }
+
+    .story-hero h1 {
+        font-size: 30px;
+    }
+
+    .story-hero .story-deck {
+        font-size: 16px;
+    }
+
+    .story-copy h2 {
+        font-size: 24px;
+    }
+
+    .story-copy p,
+    .conclusion-section p {
+        font-size: 16px;
+    }
+
+    .flourish-embed iframe {
+        height: 460px;
+    }
+
+    .story-container .story-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
